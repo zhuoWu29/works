@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HD</title>
+</head>
+<style>
+  html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+  }
+  .container {
+    margin: 0 auto;
+    height: 100%;
+    background: #ebebeb;
+  }
+  .header {
+    position: relative;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+  }
+  .menu img {
+    width: 200px;
+    margin-right: 20px;
+  }
+  .nav {
+    width: calc(100% - 220px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .navItem {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+  }
+  .navItem a {
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+  }
+  .navItem:hover {
+    background: #0081ff;
+  }
+  .navItem:hover a {
+    color: #fff !important;
+  }
+  .nav .active {
+    background: #0081ff;
+    color: #fff !important;
+  }
+  .content {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 100px;
+  }
+  .splitLine {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    background-color: #33c2eb;
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 2px;
+  }
+  .module {
+    background: #fff;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .news {
+    padding: 5px 10px;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 10px;
+  }
+  .news:hover {
+    cursor: pointer;
+    color: #0081ff;
+  }
+  .zuopin {
+    width: 30%;
+    margin-bottom: 80px;
+  }
+  .zuopin img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+  }
+  .zyList div {
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    background-color: #eee;
+    width: 200px;
+  }
+  .zyList div:hover{
+    cursor: pointer;
+    background-color: #0081ff;
+    color: #fff;
+  }
+  .activeZy {
+    background-color: #0081ff !important;
+    color: #fff;
+  }
+  .zyny {
+    display: none;
+    margin-left: 50px;
+    flex: 1;
+  }
+  .activeZyny {
+    display: block;
+  }
+</style>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="menu">
+        <img src="./img/logo.jpg" alt="">
+        <div class="nav">
+          <div class="navItem"><a href="./hd.html">首页</a></div>
+          <div class="navItem"><a href="./xy.html">学院简介</a></div>
+          <div class="navItem active">学院教学</div>
+          <div class="navItem">学术科研</div>
+          <div class="navItem">学院就业</div>
+          <div class="navItem">学院文化</div>
+          <div class="navItem">师生互动</div>
+          <div class="navItem">联系我们</div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="splitLine">专业设置</div>
+      <div class="module" style="display: flex;">
+        <div class="zyList">
+          <div class="zy" class="activeZy">数字媒体艺术</div>
+          <div class="zy" class="">数字媒体技术</div>
+          <div class="zy" class="">传播学</div>
+          <div class="zy" class="">产品设计</div>
+          <div class="zy" class="">工业设计</div>
+        </div>
+        <div class="zyny">
+          <div>
+            <div style="margin: 20px 0;">培养目标: </div>
+            <div>旨在培养基础扎实、专业精湛、富有创新精神和创业能力，具备人文艺术素养和数字媒体技术知识，能够胜任数字媒体领域工作需要的高级创新应用艺术设计人才，并能够兼顾具游戏、数字出版、电子商务等岗位需要的高级复合型人才。</div>
+          </div>
+          <div>
+            <div style="margin: 20px 0;">培养宗旨: </div>
+            <div>具有跨领域合作能力和性格的「T型设计师」</div>
+          </div>
+        </div>
+        <div class="zyny">
+          <div style="text-align: center;width: 100%">
+            <img style="width: 500px" src="./img/数媒技1.jpeg">
+          </div>
+          <div style="text-align: center;width: 100%">
+            <img style="width: 500px" src="./img/数媒技2.jpeg">
+          </div>
+        </div>
+        <div class="zyny">
+          <div style="text-align: center;width: 100%">
+            <img style="width: 500px" src="./img/传播1.jpeg">
+          </div>
+          <div style="text-align: center;width: 100%">
+            <img style="width: 500px" src="./img/传播2.jpeg">
+          </div>
+        </div>
+        <div class="zyny">
+          <div style="text-align: center;width: 100%">
+            <img style="width: 500px" src="./img/产品设计.jpeg">
+          </div>
+        </div>
+        <div class="zyny">
+          <div style="text-align: center;width: 100%">
+            <img style="width: 500px" src="./img/工业设计.jpeg">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="splitLine">友情链接</div>
+      <div class="module" style="display: flex; justify-content: center; align-items: center;">
+        <a style="text-decoration: none;" href="https://syxy.hdu.edu.cn/2018/0314/c2215a60553/page.htm">
+          <img src="https://syxy.hdu.edu.cn/_upload/article/images/c5/ad/16b2182b488096b848ba6f8a4aca/875c08dc-706b-47c4-ba23-b8f785d4766c.jpg" alt="">
+        </a>
+        <a style="margin: 0 50px;text-decoration: none;" href="https://www.cgan.net/">
+          <img src="https://syxy.hdu.edu.cn/_upload/article/images/d7/8c/78f8379b4ca5be8413734400462e/10b4f8f1-44f6-4549-9ee4-a16140534e0f.jpg" alt="">
+        </a>
+        <a style="text-decoration: none;" href="https://www.hdu.edu.cn/main.htm">
+          <img src="https://syxy.hdu.edu.cn/_upload/article/images/a1/dd/5ee2108e470db56ceaf82d311b80/561230bf-c037-46c3-872a-8ebc8dd7b88b.jpg" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
