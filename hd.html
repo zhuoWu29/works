@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HD</title>
+</head>
+<style>
+  html,body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+  }
+  .container {
+    margin: 0 auto;
+    background: #ebebeb;
+  }
+  .header {
+    position: relative;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: #ebebeb;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+  }
+  .menu img {
+    width: 200px;
+    margin-right: 20px;
+  }
+  .nav {
+    width: calc(100% - 220px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .navItem {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+  }
+  .navItem a {
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+  }
+  .navItem:hover {
+    background: #0081ff;
+  }
+  .navItem:hover a {
+    color: #fff !important;
+  }
+  .nav .active {
+    background: #0081ff;
+    color: #fff !important;
+  }
+  .videoWarpper {
+    width: 100%;
+  }
+  video {
+    width: 100%;
+  }
+  .content {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .splitLine {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    background-color: #33c2eb;
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 2px;
+  }
+  .module {
+    background: #fff;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .news {
+    padding: 5px 10px;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 10px;
+  }
+  .news:hover {
+    cursor: pointer;
+    color: #0081ff;
+  }
+  .zuopin {
+    width: 30%;
+    margin-bottom: 80px;
+  }
+  .zuopin img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+  }
+</style>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="menu">
+        <img src="./img/logo.jpg" alt="">
+        <div class="nav">
+          <div class="active navItem">首页</div>
+          <div class="navItem"><a href="./xy.html">学院简介</a></div>
+          <div class="navItem"><a href="./zy.html">学院教学</a></div>
+          <div class="navItem">学术科研</div>
+          <div class="navItem">学院就业</div>
+          <div class="navItem">学院文化</div>
+          <div class="navItem">师生互动</div>
+          <div class="navItem">联系我们</div>
+        </div>
+      </div>
+      <div class="videoWarpper">
+        <video autoplay loop muted>
+          <source src="/Users/wuzhuo/Desktop/web/img/首页视频.mp4"></source>
+        </video>
+      </div>
+    </div>
+    <div class="content">
+      <div class="splitLine">学院概况</div>
+      <div class="module" style="display: flex; justify-content: space-around; align-items: center;">
+        <div style="width: 43%;border: 2px solid #eee;padding: 15px;border-radius: 20px;">
+          <img style="width: 100%;height: 250px;" src="./img/school.jpg" alt="">
+          <div style="text-indent: 20px;margin-top: 5px;height: 200px;">人文艺术与数字媒体学院是一所面向现代文化创意、数字出版与移动多媒体产业，致力于文化艺术产品的创意与设计、数字复制与传播、集成制造与增值服务的专业学院。现设有数字媒体技术、数字媒体艺术、新媒体传播、产品设计和工业设计5个系，有数字媒体技术（学硕）、艺术设计（专硕）、新闻与传播（专硕）3个硕士点，有数字媒体技术、传播学、工业设计、产品设计、数字媒体艺术5个本科专业。</div>
+        </div>
+        <div style="width: 43%;border: 2px solid #eee;padding: 15px;border-radius: 20px;">
+          <img style="width: 100%;height: 250px;" src="./img/师资力量.jpeg" alt="">
+          <div style="text-indent: 20px;margin-top: 5px;height: 200px;">学院师资力量雄厚，拥有一批国内外知名的教授专家和中青年学术骨干。现有教职工106人，专任教师83人，校二层次人才1人，特聘教授1人，教授14人，副教授32人，具有博士学位44人。全国新闻出版行业领军人才2人，浙江省宣传文化系统“五个一批”人才1人，浙江省“新世纪151人才工程”第三层次2人。客座教授和兼职教授十余人，博士生导师2人，硕士生导师38人。 </div>
+        </div>
+      </div>
+
+
+      <div class="splitLine">学院新闻</div>
+      <div class="module" style="">
+        <div class="news">“沉浸良渚”智慧文旅沉浸式体验技术集成与应用创作营在杭州电子科技大学开展教学与实践</div>
+        <div class="news">人艺数法学院召开本学期第四次就业工作推进会</div>
+        <div class="news">心引力|人艺数法学院2020级毕业生“党员最后一课”</div>
+        <div class="news">在杭电看见“诗和远方”|人艺数法学院“茶话人生 ”第二期——宋韵点茶</div>
+        <div class="news">美正育人| 人艺数法学院亮相杭州图书馆第四届“城市艺术生活季”毕业展</div>
+      </div>
+
+
+
+      <div class="splitLine">作品之窗</div>
+      <div class="module" style="display: flex;flex-wrap: wrap; justify-content: space-around; align-items: center;">
+        <div class="zuopin">
+          <img style="width: 100%;height: 300px;" src="./img/影像.jpeg">
+          <div style="text-align: center;margin-top: 5px;">影像艺术</div>
+        </div>
+        <div class="zuopin">
+          <img style="width: 100%;height: 300px;" src="./img/平面.jpeg">
+          <div style="text-align: center;margin-top: 5px;">平面设计</div>
+        </div>
+        <div class="zuopin">
+          <img style="width: 100%;height: 300px;" src="./img/思维导图.jpeg">
+          <div style="text-align: center;margin-top: 5px;">思维导图优秀作业</div>
+        </div>
+        <div class="zuopin">
+          <img style="width: 100%;height: 300px;" src="./img/插画.jpeg">
+          <div style="text-align: center;margin-top: 5px;">学生插画课程作业</div>
+        </div>
+        <div class="zuopin">
+          <img style="width: 100%;height: 300px;" src="./img/工业设计.png">
+          <div style="text-align: center;margin-top: 5px;">工业设计</div>
+        </div>
+        <div class="zuopin">
+          <img style="width: 100%;height: 300px;" src="./img/毕设.jpeg">
+          <div style="text-align: center;margin-top: 5px;">毕业设计</div>
+        </div>
+      </div>
+
+
+      <div class="splitLine">友情链接</div>
+      <div class="module" style="display: flex; justify-content: center; align-items: center;">
+        <a style="text-decoration: none;" href="https://syxy.hdu.edu.cn/2018/0314/c2215a60553/page.htm">
+          <img src="https://syxy.hdu.edu.cn/_upload/article/images/c5/ad/16b2182b488096b848ba6f8a4aca/875c08dc-706b-47c4-ba23-b8f785d4766c.jpg" alt="">
+        </a>
+        <a style="margin: 0 50px;text-decoration: none;" href="https://www.cgan.net/">
+          <img src="https://syxy.hdu.edu.cn/_upload/article/images/d7/8c/78f8379b4ca5be8413734400462e/10b4f8f1-44f6-4549-9ee4-a16140534e0f.jpg" alt="">
+        </a>
+        <a style="text-decoration: none;" href="https://www.hdu.edu.cn/main.htm">
+          <img src="https://syxy.hdu.edu.cn/_upload/article/images/a1/dd/5ee2108e470db56ceaf82d311b80/561230bf-c037-46c3-872a-8ebc8dd7b88b.jpg" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
